@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS Link  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Withdraw Section Start-->
+    <div class="heading">
+        <h1 class="text-center text-4xl font-semibold mt-10">Let's <span class="text-blue-600">Spend Some Money</span>
+        </h1>
+    </div>
+    <div class="grid grid-cols-3  gap-4 w-3/4 mx-auto text-white mt-10">
+        <div class="p-8 bg-blue-400 rounded">
+            <h3 class="text-2xl">Deposit</h3>
+            <h2 class="text-4xl">$ <span id="deposit-total">00</span></h2>
+        </div>
+        <div class="p-8 bg-green-300 rounded">
+            <h3 class="text-2xl">Withdraw</h3>
+            <h2 class="text-4xl">$ <span id="withdraw-total">00</span></h2>
+        </div>
+        <div class="p-8 bg-purple-300 rounded">
+            <h3 class="text-2xl">Balance</h3>
+            <h2 class="text-4xl">$ <span id="balance-total">1240</span></h2>
+        </div>
+    </div>
+    <!-- Withdraw Section End-->
+    <!-- Input Field  -->
+    <section class="mt-20">
+        <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto ">
+            <div class="bg-blue-400 p-5 rounded">
+                <input type="text" class="border w-2/4 block my-2 mb-3 border-gray-400 p-31" name="" id="deposit-feild"
+                    placeholder="$ amount you want to deposit">
+                <button class="bg-green-300 font-semibold text-white py-1 px-2 rounded"
+                    id="deposit-button">Deposit</button>
+            </div>
+            <div class="bg-purple-300 p-5 rounded">
+                <input type="text" class="border w-2/4 block my-2 mb-3 border-gray-400 p-1" name="" id="withdraw-feild"
+                    placeholder="$ amount you want to Withdraw">
+                <button class="bg-green-300 font-semibold text-white py-1 px-2 rounded"
+                    id="withdraw-button">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <!-- JavaScript File Hare -->
+    <script src='JavaScript/banking.js'></script>
+</body>
+
+</html>
